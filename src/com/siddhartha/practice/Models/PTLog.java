@@ -11,6 +11,17 @@ public class PTLog {
 	private int id;
 	private int employeeId;
 	private String details;
+
+	public PTLog() {
+	}
+
+	public PTLog(int id, int employeeId, String details, Date loggedDate) {
+		this.id = id;
+		this.employeeId = employeeId;
+		this.details = details;
+		this.loggedDate = loggedDate;
+	}
+
 	private Date loggedDate;
 
 	public int getId() {

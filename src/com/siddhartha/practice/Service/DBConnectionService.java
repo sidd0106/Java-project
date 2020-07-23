@@ -9,8 +9,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * Database connection service class to create,close and manage connection to a database.
- * Singleton class to avoid multiple instance of same database connection.
+ * Database connection service class to create,close and manage connection to a database. Singleton class to avoid
+ * multiple instance of same database connection.
  */
 public class DBConnectionService {
 
@@ -25,6 +25,7 @@ public class DBConnectionService {
 
 	/**
 	 * Creates instance of connection with database.
+	 *
 	 * @return
 	 * @throws RuntimeException
 	 */
@@ -42,11 +43,12 @@ public class DBConnectionService {
 
 	/**
 	 * Closes connection with the database.
+	 *
 	 * @throws RuntimeException
 	 */
 	public static void closeConnection() throws RuntimeException {
 		try {
-			if(connection!=null) {
+			if (connection != null) {
 				connection.close();
 				connection = null;
 			}

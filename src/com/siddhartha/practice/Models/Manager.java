@@ -7,6 +7,13 @@ package com.siddhartha.practice.Models;
  */
 public class Manager extends TeamMember {
 
+	public Manager() {
+	}
+
+	public Manager(int id, String name) {
+		super(id, name);
+	}
+
 	@Override
 	public Designation getDesignation() {
 		return Designation.Manager;
@@ -14,9 +21,14 @@ public class Manager extends TeamMember {
 
 	@Override
 	public String toString() {
-		return "Manager{" +
-				"id=" + id +
-				", name='" + name + ", designation=" + this.getDesignation() + '\'' +
-				'}';
+		return new StringBuilder()
+				.append("Manager{ id=")
+				.append(id)
+				.append(", name=")
+				.append(name)
+				.append(", designation=")
+				.append(this.getDesignation())
+				.append('}')
+				.toString();
 	}
 }

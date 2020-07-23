@@ -10,12 +10,17 @@ public class TeamMember implements Employee {
 	protected String name;
 
 	public TeamMember() {
+	}
 
+	public TeamMember(int id, String name) {
+		this.id = id;
+		this.name = name;
 	}
 
 	public int getId() {
 		return id;
 	}
+
 
 	public void setId(int id) {
 		this.id = id;
